@@ -158,4 +158,4 @@ def is_valid_email(s):
     False
     '''
     # TODO: use re.fullmatch for the entire email string, then bool the result.
-    return bool(re.fullmatch(r'\S+@\S+', s))
+    return bool(re.fullmatch(r'\w+@\w+\.\w+', s))
